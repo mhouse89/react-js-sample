@@ -8,6 +8,7 @@ enabled = true
 
   [analyzers.meta]
   module_system = "es-modules"
+  ecma_version = "2019"
   environment = [
     "nodejs",
     "jest",

@@ -10,11 +10,12 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
+          <script>window.__STATE__ = ${JSON.stringify({ data })}</script>
         </div>
         <p className="App-intro">
           <NavBar />
           <Container />
-          <BadComponent />
+          <BadComponent data={"test"} />
         </p>
       </div>
     );
