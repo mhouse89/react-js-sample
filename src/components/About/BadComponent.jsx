@@ -10,7 +10,7 @@ const MyComponent = (data) => {
 
   let obj = { x: "foo" },
     key = "x",
-    value = eval("obj." + key);
+    value = eval(`obj.${  key}`);
 
   return (
     <div>
