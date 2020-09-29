@@ -5,7 +5,6 @@ const MyComponent = (data) => {
     window.location.replace("https://www.w3schools.com")
   );
 
-  const badRegex = RegExp("^((ab)*)+$");
   const userInput = <b>Hi React</b>;
   document.getElementById("my-test-id").innerHTML = untrustedAjaxRes;
 
@@ -19,10 +18,10 @@ const MyComponent = (data) => {
         Today&apos;s weather information reads: <br />
         <div id="my-test-id"></div>
       </p>
-
-      <div dangerouslySetInnerHTML={{ __html: userInput }} />
-      <script>window.__STATE__ = ${JSON.stringify({ data })}</script>
-      {badRegex}
+      data:text/html,{" "}
+      <a href="javascript: alert('hello from javascript!')">click me</a>
+      <div dangerouslySetInnerHTML={{ __html: userInput }}> </div>
+      <script>window.__PRELOADED_STATE__ = ${JSON.stringify({ data })}</script>
     </div>
   );
 };
